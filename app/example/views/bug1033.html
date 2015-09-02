@@ -1,0 +1,12 @@
+<div class="padding" ng-controller="Bug1033Controller">
+  <super-navbar>
+    <super-navbar-title ng-bind="navbarTitle"></super-navbar-title>
+  </super-navbar>
+
+  <h3>Bug 1033 Reproduction</h3>
+
+
+  <p>window.postMessage() seems to fire twice. In addEventListener, it will get two messages per a post:</p>
+
+  <button ng-click="post()">postMessage</button>
+</div>
